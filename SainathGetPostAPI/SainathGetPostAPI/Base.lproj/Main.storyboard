@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SainathGetPostAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2F-aV-a99">
+                                <rect key="frame" x="137" y="384" width="118" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="ixr-jr-YzB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="GET"/>
+                                <connections>
+                                    <action selector="onGetTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eGp-Vs-7az"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zg-DO-Y3m">
+                                <rect key="frame" x="137" y="512" width="118" height="65"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="POST"/>
+                                <connections>
+                                    <action selector="onPostTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ayb-5A-2gJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="A2F-aV-a99" firstAttribute="trailing" secondItem="0Zg-DO-Y3m" secondAttribute="trailing" id="2Mc-10-xjh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0Zg-DO-Y3m" secondAttribute="bottom" constant="241" id="DPc-HO-Vft"/>
+                            <constraint firstItem="A2F-aV-a99" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="JLH-ad-WJo"/>
+                            <constraint firstItem="A2F-aV-a99" firstAttribute="leading" secondItem="0Zg-DO-Y3m" secondAttribute="leading" id="JiV-4b-I9N"/>
+                            <constraint firstItem="A2F-aV-a99" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="325" id="KVD-0i-iZa"/>
+                            <constraint firstItem="0Zg-DO-Y3m" firstAttribute="top" secondItem="A2F-aV-a99" secondAttribute="bottom" constant="63" id="X1E-jb-tnM"/>
+                            <constraint firstItem="A2F-aV-a99" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aBh-y4-gNT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72.51908396946564" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
